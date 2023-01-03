@@ -1,10 +1,11 @@
 /* LINKING GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alata', sans-serif;
 }
 
 .header{
@@ -15,6 +16,7 @@
     background-size: cover;
     position: relative;
     color: white;
+    font-family: 'Alata', sans-serif;
 }
 
 .navbar{
@@ -39,13 +41,22 @@
    font-size: 12px;
    font-weight: 900;
    color: #fff;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
 }
 
 .navlist ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: firebrick;
+    background: #fff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -55,23 +66,52 @@
     width: 100%;
 }
 
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .textbox{
     font-size: 40px;
     padding:3rem;
     border: 3px solid #fff;
     display: inline-block;
     margin-left: 7.8rem;
-    margin-top: 3.5rem;}
+    margin-top: 3.5rem;
+    width: 650px;
+}
 
 .sec2 {
     background-color: #fff;
     display: flex;
-    align-items: flex-end;
     padding: 8rem;
+    
+}
+.container{
+    display: flex;
+}
+ z
+.container img{
+    position: relative;
+    z-index: 10;
+    
+}
+
+.block2{
+    position: absolute;
+    background-color: #fff;
+    border-radius: none;
+    border: none;
+    border-color: #000;
+    z-index: 11;
+    margin-top: 10rem;
+    margin-left: 35rem;
+    padding: 80px;
 }
 
 h2{
     font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 .block2 p {
@@ -79,7 +119,7 @@ h2{
     font-size: 13px;
     font-weight: 500;
     padding-top: 1.5rem;
-    padding-left: 6rem;
+    font-family: 'Alata', sans-serif;
 }
 
 .sec3 {
@@ -96,25 +136,60 @@ h2{
 h3{
     font-size: 35px;
     font-weight: 50;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .sec3top button{
-    padding: 0.3rem 1.5rem;
+    padding: 0.5rem 2.3rem;
     font-size: 12px;
+    font-weight: 300;
+    font-family: 'Alata', sans-serif;
+    background: #fff;
+    border-color: #808080;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.sec3top button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .sec3mid {
+    display: flex;
     margin-left: 8rem;
     margin-right: 8rem;
 }
 
+.image1{
+    position: relative;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgtext{
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    bottom: 35px;
+    left: 35px;
+}
+
+.image1:hover {
+    box-shadow: transparent;
+}
+
 .sec3bottom {
+    display: flex;
     margin-left: 8rem;
     margin-right: 8rem;
 }
 
 footer {
     background-color: #000;
+    margin-top: 5rem;
 }
 
 .footercontent {
@@ -123,11 +198,105 @@ footer {
     padding: 2rem;
 }
 
+.footercontent img {
+   padding-bottom: 15px;
+}
+
+.footercontent1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6.1rem;
+}
+
+.footericon {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.icons:hover::after {
+    width:100%
+}
+
+.icons {
+   
+}
+
+.footercontent2 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footercontent2 ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: var(2rem);
+    gap: 2rem;
     color: #fff;
-
 }
+
+.footercontent ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.footercontent2 ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footercontent2 ul li:hover::after{
+    width: 100%
+}
+
+/* .navlist ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlist ul li:hover::after{
+    width: 100%; */
+
+.footercontent p {
+    font-family: 'Alata', sans-serif;
+    color: #808080;
+    font-size: 10px;
+    margin: 0rem 6.1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+/* @media(max-width:375px)
+{.navlist {
+    text:none;}
+} */
+
+/* .navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Alata', sans-serif;
+    font-weight: 500; */
